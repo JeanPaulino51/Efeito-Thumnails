@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+     <head>
+        <meta charset="utf-8"> 
+        <title> Efeito Thumbnails </title>
+        <meta name="author" content="Jean Moreira Paulino">
+         <meta name="description" content=" Aplicar animação nas imagens">
+         <meta name="keywords" content="">
+
+                   <style>
+                      body{
+                          font-family: sans-serif;
+                      }
+
+                      h1{
+                          text-align: center;
+                      }
+
+                      a{
+                          display: block;
+                          margin: 10px;
+                          position: relative;
+                      }
+
+                      a img{
+                          width: 80%;
+                          display: block;
+                      }
+
+                      a::before{
+                        content: '';
+                         position: absolute;
+                         top: 0;
+                         left: 0;
+                         width: 80%;
+                         height: 100%;
+                         background: transparent;
+                         transition: all .5s;
+                      }
+
+                      a:hover::before{
+                         content: '';
+                         background: rgba(0,0,0,.5);
+        
+                      }
+
+                      a:hover::after{
+                          content: 'Veja Mais';
+                          display: block;
+                          position: absolute;
+                          border: 3px solid white;
+                          color: rgb(199, 7, 7);
+                          top: 50%;
+                          left: 50%;
+                          padding: 10px 20px;
+                          transform:translate(-150%);                      
+                      }
+
+                   </style>
+
+
+     </head>
+
+     <body>
+
+                <h1>EFEITO HOVER:</h1>
+        <section>
+               <article>
+                   <a href="#">
+                       <img src="../Efeito Hover em Thumbnails/ProjetoThumbnails/thumbs/01.jpg" alt="">
+                   </a>
+               </article>
+           
+
+           
+                <article>
+                    <a href="#">
+                        <img src="../Efeito Hover em Thumbnails/ProjetoThumbnails/thumbs/02.jpg" alt="">
+                    </a>
+                </article>
+        
+
+            
+                <article>
+                    <a href="#">
+                        <img src="../Efeito Hover em Thumbnails/ProjetoThumbnails/thumbs/03.jpg" alt="">
+                    </a>
+                </article>
+            
+
+            
+                <article>
+                    <a href="#">
+                        <img src="../Efeito Hover em Thumbnails/ProjetoThumbnails/thumbs/04.jpg" alt="">
+                    </a>
+                </article>
+            
+
+            
+                <article>
+                    <a href="#">
+                        <img src="../Efeito Hover em Thumbnails/ProjetoThumbnails/thumbs/05.jpg" alt="">
+                    </a>
+                </article>
+            
+
+            
+                <article>
+                    <a href="#">
+                        <img src="../Efeito Hover em Thumbnails/ProjetoThumbnails/thumbs/06.jpg" alt="">
+                    </a>
+                </article>
+      </section>
+     </body>
+</html>
